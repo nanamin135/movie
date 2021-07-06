@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="up.css">
+  <title>movie</title>
+  <link rel="stylesheet" href="movies.css">
+  <link rel="stylesheet" href="home.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<header>
+  <p>ログイン</p>  
+  <div class="header-list">
+      <img src="homu-list/sanple.png" id="rogo">
+      <table>
+          <tr>
+              <td><%= link_to image_tag('homu-list/homu-list.png'), "/" ,class: 'list' %></td>
+              <td><%= link_to image_tag('homu-list/zyanru-list.png'), "/" ,class: 'list' %></td>
+              <td><%= link_to image_tag('homu-list/sukezyuru-list.png'), "/" ,class: 'list' %></td>
+              <td><%= link_to image_tag('homu-list/my-list.png'), "/" ,class: 'list' %></td>
+              <td><%= link_to image_tag('homu-list/kuizu-list.png'), "/" ,class: 'list' %></td>
+              <td> </td>
+              <td><input type="text" class="text" size="20" maxlength="20"></td>
+              <td><%= image_tag ('homu-list/kensaku.png'), id: 'ken' %></td>
+              <td> </td>
+              <td><%= image_tag ('homu-list/roguin.png'), id: 'rogu' %></td>
+          </tr>
+      </table>
+  </div>
+</header>
+<body><script type="text/javascript" src="https://ad.netowl.jp/js/star-php.js"></script>
+  <!-- ハンバーガーメニューここから -->
+  <div class="menu">
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+      </div>
+      <div class="black-bg" id="js-black-bg"></div>
+      
+      <nav class="global-nav">
+          <ul class="global-nav__list categories">
+              <li><a href="http://url">ホーム</a></li>
+              <li><a href="https://url">ジャンル</a></li>
+              <li><a href="#">スケジュール</a></li>
+              <li><a href="#">Myリスト</a></li>
+              <li><a href="#"></a></li>
+          </ul>
+      </nav>
+  </div>
+  <!-- ハンバーガーメニューここまで -->
+  <!-- Swiper -->
+  <h2>注目映画</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sample1">
+          <%= image_tag 'eiga/app1.jpg' %>
+          <div class="mask">
+            <div class="caption">
+              <p>sample</p>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <%#
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app1.jpg' %>
+      <%#
+      </div>
+      %>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app2.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app3.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app4.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app5.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app7.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app8.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app9.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/app10.jpg' %>
+      </div>
+    </div>
+    
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <h2>テスト1</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby1.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby2.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby3.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby4.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby5.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby6.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby7.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby8.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby9.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/ruby10.jpg' %>
+      </div>
+    </div>
+    
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <h2>テスト2</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails1.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails2.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails3.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails4.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails5.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails6.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails7.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails8.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails9.jpg' %>
+      </div>
+      <div class="swiper-slide">
+        <%= image_tag 'eiga/rails10.jpg' %>
+      </div>
+    </div>
+    
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      //768px以上
+      breakpoints:{
+        768:{
+          slidesPerView:2,
+        },
+        980:{
+          slidesPerView:8,
+        },
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <!-- ハンバーガーメニュー -->
+  <script>
+    function toggleNav() {
+      var body = document.body;
+      var hamburger = document.getElementById('js-hamburger');
+      var blackBg = document.getElementById('js-black-bg');
+
+      hamburger.addEventListener('click', function() {
+        body.classList.toggle('nav-open');
+      });
+      blackBg.addEventListener('click', function() {
+        body.classList.remove('nav-open');
+      });
+    }
+    toggleNav();
+  </script>
+  <!-- ハンバーガーメニューここまで -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "utf-8";
+body{
+    margin:0;
+    background-color:#212E3D;
+    width:100%;
+}
+header{
+    background-color:#E6E9EC;
+    width:100%;
+}
+#rogo{
+    padding:20px 20px;
+    width:168px;
+    height:180;
+
+}
+.header-list table{
+    position:absolute;
+    border-spacing:3em;
+    top:120px;
+    left:280px;
+}
+.list{
+    width:82px;
+    height:25px;
+}
+#ken{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:50px;
+    right:225px;
+}
+#rogu{
+    width:60px;
+    height:15px;
+}
