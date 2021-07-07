@@ -7,9 +7,32 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="up.css">
+  <link rel="stylesheet" href="movies.css">
   </head>
 
   <body>
+    <header>
+    <p>ログイン</p>  
+    <div class="header-list">
+        <%= image_tag 'homu-list/sanple.png', id: 'rogo' %>
+        <table>
+            <tr>
+                <td><%= link_to image_tag('homu-list/homu-list.png'), "/" ,class: 'list' %></td>
+                <td><%= link_to image_tag('homu-list/zyanru-list.png'), "/" ,class: 'list' %></td>
+                <td><%= link_to image_tag('homu-list/sukezyuru-list.png'), "/" ,class: 'list' %></td>
+                <td><%= link_to image_tag('homu-list/my-list.png'), "/" ,class: 'list' %></td>
+                <td><%= link_to image_tag('homu-list/kuizu-list.png'), "/" ,class: 'list' %></td>
+                <td> </td>
+                <td><input type="text" class="text" size="20" maxlength="20"></td>
+                <td><%= image_tag ('homu-list/kensaku.png'), id: 'ken' %></td>
+                <td> </td>
+                <td><%= image_tag ('homu-list/roguin.png'), id: 'rogu' %></td>
+            </tr>
+        </table>
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>
