@@ -3,7 +3,7 @@
       
       <table>
           <tr>
-              <td><%= link_to image_tag('homu-list/homu-list.png'), "/" ,class: 'list' %></td>
+              <td><%= link_to image_tag('homu-list/homu-list.png'), "localhost:3000" ,class: 'list' %></td>
               <td><%= link_to image_tag('homu-list/zyanru-list.png'), "/" ,class: 'list' %></td>
               <td><%= link_to image_tag('homu-list/sukezyuru-list.png'), "/" ,class: 'list' %></td>
               <td><%= link_to image_tag('homu-list/my-list.png'), "/" ,class: 'list' %></td>
@@ -61,7 +61,7 @@
       </div>
       %>
       <div class="swiper-slide">
-        <%= image_tag 'eiga/app2.jpg' %>
+        <%= link_to image_tag('eiga/app2.jpg',class: "img"),movie_path('38') %>
       </div>
       <div class="swiper-slide">
         <%= image_tag 'eiga/app3.jpg' %>

@@ -20,12 +20,21 @@
  }
  h1,p,
  form{
-   text-align: center;
+  text-align: center;
+  color:white;
  }
 .movie{
   text-align: center;
   color:white;
   font-size: 30px;
-  width:80%;
+  width:60%;
   margin:0 auto;
+}
+#title{
+  height:50px;
+  width:45%;
+}
+#text{
+  height:400px;
+  width:45%;
 }
